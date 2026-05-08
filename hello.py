@@ -3,3 +3,5 @@
 str = "Hello, World!"
 print(str)
 
+str = 'Hello'
+print(str)
