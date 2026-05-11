@@ -1,5 +1,5 @@
 # List : A list is an array in python that can be used to store multiple values, objects, strings or numbers
-
+# A list is a mutable data type which means we can change the values of a list after it has been created
 numList = [1,2,3]
 print(numList)
 
