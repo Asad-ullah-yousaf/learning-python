@@ -30,3 +30,7 @@ print(f"My name is {name} and I am {course}.")
 print(f"I am {age} years old and the year is {year}.")
 print(f"The temperate of body is {temperate_of_body} and the value of pi is {pi}.")
 print(f"Is it true that I am an adult? {is_adult} and is it true that I am a student? {is_student}.")
+
+
+string = b'a\x01c'
+print(string)
