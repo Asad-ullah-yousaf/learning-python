@@ -34,3 +34,35 @@ print(dict['name'])
 
 x = dict.get('program')
 print(x)
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+print(car)
+print(car['brand'])
+
+x = car.get('model')
+print(x)
+
+y = car.keys()
+print(y)
+
+car['year'] = 1977
+print(car)
+
+
+x = car.values()
+print(x)
+
+car['brand'] = 'Tesla'
+print(x)
+
+
+if 'model' in car:
+  print(f"The model of this car is {car['model']}")
+else:
+  print("No Model Exists for this car")
