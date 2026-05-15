@@ -73,6 +73,14 @@
 #         Try to change the first value to 5 and observe the error Python gives you.
 #         Unpack the tuple into two separate variables, x and y, and print them.
 
+# point = (4, 10)
+# x = point[0]
+# y = point[1]
+
+# point[0] = 5
+# print(x)
+# print(y)
+
 
 
 
@@ -84,3 +92,8 @@
 #         The store just bought 5 more bananas. Update the "bananas" count.
 #         The store started selling "mangos". Add "mangos" to the dictionary with an initial stock of 12.
 #         Print the final dictionary.
+
+fruit_stock = { "Apples": 10, "Bananas": 4, "Oranges": 8 }
+fruit_stock.update({'Bananas':9})
+fruit_stock.update({"Mangos":12})
+print(fruit_stock)
