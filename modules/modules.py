@@ -42,25 +42,37 @@ import random
 
 # print(list_of_uids)
 
-num_of_ids = int(input("How many ids to generate: "))
-lst_of_ids = []
-def generate_user_id():
-    char_of_id = int(input("Number of characters the id should have: "))
+# num_of_ids = int(input("How many ids to generate: "))
+# lst_of_ids = []
+# char_of_id = int(input("Number of characters the id should have: "))
+# def generate_user_id():
     
     
-    comb = string.ascii_letters + string.digits
-    ids = []
-    while len(ids) < char_of_id:
-        random_num = random.randint(0,61)
-        ids.append(comb[random_num])
-    print(ids)
-    new = ''.join(ids)
-    lst_of_ids.append(new)
+#     comb = string.ascii_letters + string.digits
+#     ids = []
+#     while len(ids) < char_of_id:
+#         random_num = random.randint(0,61)
+#         ids.append(comb[random_num])
+#     # print(ids)
+#     new = ''.join(ids)
+#     lst_of_ids.append(new)
     
         
         
-for i in range(num_of_ids):
-    generate_user_id()
-    print('-------')
+# for i in range(num_of_ids):
+#     generate_user_id()
     
-print(lst_of_ids)
+# print(lst_of_ids)
+
+# Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
+
+def generate_rgb_color():
+    tuple1 = ()
+    
+    for i in range(3):
+        num = random.randint(0,255)
+        new_tuple = num
+        tuple1 = (*tuple1, new_tuple)
+    print(tuple1)
+    
+generate_rgb_color()
