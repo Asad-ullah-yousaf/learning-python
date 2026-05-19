@@ -98,3 +98,16 @@ def reverse_list(lst):
 list = [1,2,3,4,5]
 
 reverse_list(list)
+
+
+def even_odd_nums(number):
+    i = 0
+    while i <= number :
+        i+= 1
+        if i % 2 == 0:
+            print(f"{i} is an even number")
+        elif i % 2 != 0:
+            print(f"{i} is odd number")
+    
+number = int(input("Enter a number to check how many even and odd numbers it has: "))
+even_odd_nums(number)
