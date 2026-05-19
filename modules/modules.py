@@ -66,13 +66,38 @@ import random
 
 # Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
 
-def generate_rgb_color():
-    tuple1 = ()
+# def generate_rgb_color():
+#     tuple1 = ()
     
-    for i in range(3):
-        num = random.randint(0,255)
-        new_tuple = num
-        tuple1 = (*tuple1, new_tuple)
-    print(tuple1)
+#     for i in range(3):
+#         num = random.randint(0,255)
+#         new_tuple = num
+#         tuple1 = (*tuple1, new_tuple)
+#     print(tuple1)
     
-generate_rgb_color()
+# generate_rgb_color()
+
+# Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
+list = [1,2,3,4,5]
+
+def shuffle_list(lst):
+    random.shuffle(lst)
+    print(lst)    
+    return lst
+    
+shuffle_list(list)
+
+# Write a function which returns an array of seven random numbers in a range of 0-9. 
+# All the numbers must be unique.
+
+def unique_arr():
+    arr = []
+    for i in range(7):
+        # new_num = random.randint(0,9)
+        # arr.append(new_num)
+        check = random.sample(range(10), 7)
+        return check
+    print(arr)
+    print(check)
+    
+unique_arr()
