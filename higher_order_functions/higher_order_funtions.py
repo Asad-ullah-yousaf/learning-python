@@ -35,3 +35,25 @@ def outer_func(x):
 
 add_number = outer_func(524)
 print(add_number(5))
+
+
+arr = [1,2,3,4]
+
+for i in arr:
+    print(f".{i}")
+
+def sum_numbers(num):
+    result = 0
+    for i in arr :
+        result += i
+    return result
+
+
+print(sum_numbers(arr))
+
+def higher_order_function(f, num):
+    result = f(num)
+    return result ** 2
+
+
+print(higher_order_function(sum_numbers,arr))
