@@ -79,3 +79,15 @@ def uppercase(text):
 map_text = map(uppercase, text)
 
 print(list(map_text))
+
+
+# FILTER IN PYTHON
+numbers = [1,2,3,4,5,6,7,8,9]
+
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+check_num = filter(is_even, numbers)
+print(list(check_num))
