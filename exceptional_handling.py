@@ -65,3 +65,13 @@ for index, i in enumerate(countries):
     if i == 'Norway':
         print(f"{i} is at {index} index in the Array")
     print(index,i)
+    
+# ZIP: Combining two lists or multiple lists
+fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']                    
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']
+fruits_and_vegies = []
+
+for f,v in zip(fruits,vegetables):
+    fruits_and_vegies.append({'fruit':f, 'veges':v})
+
+print(fruits_and_vegies)
